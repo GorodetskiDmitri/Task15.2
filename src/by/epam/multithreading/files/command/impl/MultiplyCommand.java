@@ -4,14 +4,7 @@ import java.util.Arrays;
 
 import by.epam.multithreading.files.command.Command;
 
-public class MultiplyCommand implements Command {
-	private double[] inputArray;
-	private double result;
-	
-	@Override
-	public void setValues(double[] inputArray) {
-		this.inputArray = inputArray;
-	}
+public class MultiplyCommand extends Command {
 
 	@Override
 	public void doOperation() {
@@ -20,10 +13,4 @@ public class MultiplyCommand implements Command {
 			result = result * element;
 		}
 	}
-
-	@Override
-	public double getResult() {
-		return result;
-	}
-
 }
