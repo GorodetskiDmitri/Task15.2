@@ -1,7 +1,5 @@
 package by.epam.multithreading.files.command.impl;
 
-import java.util.Arrays;
-
 import by.epam.multithreading.files.command.Command;
 
 public class SquareCommand extends Command {
